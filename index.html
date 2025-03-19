@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Tin Tức</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Menu */
+.menu {
+    background: #0088cc;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+}
+
+.menu ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Container */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Main news */
+.main-news {
+    position: relative;
+}
+
+.main-news img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-news img:hover {
+    transform: scale(1.05);
+}
+
+.main-news h1 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* Side news */
+.side-news {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+}
+
+.news-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">NÓNG</a></li>
+            <li><a href="#">MỚI</a></li>
+            <li><a href="#">VIDEO</a></li>
+            <li><a href="#">CHỦ ĐỀ</a></li>
+            <li><a href="#"># Năng lượng tích cực</a></li>
+            <li><a href="#"># Khám phá Việt Nam</a></li>
+            <li><a href="#"># Khám phá Thế Giới</a></li>
+        </ul>
+    </nav>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Bài viết chính -->
+        <div class="main-news">
+            <img src="https://via.placeholder.com/600x300" alt="Main News">
+            <h1> Nga đồng ý ngừng tấn công vào cơ sở năng lượng của Ukraine</h1>
+        </div>
+
+        <!-- Bài viết phụ -->
+        <div class="side-news">
+            <div class="news-item">
+                <img src="https://via.placeholder.com/150" alt="News">
+                <p>Giá vàng hôm nay 19/3: Vàng lập đỉnh mới, đạt mức 98,7 triệu đồng/lượng</p>
+            </div>
+            <div class="news-item">
+                <img src="https://via.placeholder.com/150" alt="News">
+                <p>Tuyển Việt Nam đấu Campuchia: Khi ông Kim Sang Sik toan tính</p>
+            </div>
+            <div class="news-item">
+                <img src="https://via.placeholder.com/150" alt="News">
+                <p>Tổng thống Ukraine lên tiếng sau điện đàm với Mỹ - Nga</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
